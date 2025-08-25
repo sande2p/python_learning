@@ -1,0 +1,76 @@
+# Strings Concatenation
+
+# STRINGS ARE IMMUTABLE --- EK BAAR BAN GAYI TO CHANGE NAHI HOTI
+# STRING ARE SEQUENCE OF CHARACTERS
+for i in 'string':
+    print(i)
+
+# Add walk to the end of string a
+a = 'johhny walker'
+
+
+# using + operator
+print("=== using + operator ===")
+b = a + ' walk'
+print(b)
+
+# using formatted string
+print("=== using formatting ===")
+print("{0} walk".format(a), end="\n\n")
+
+# String interpolation
+w = 'walk'
+t = 4
+print("=== String Interpolation ===")
+b = "{0} {1} {2} times".format(a, w, t)
+print(b, end="\n\n")
+
+
+# String multiplication
+print("===  String Multiplication ===")
+b = "{0} {1}".format(a, w) # johnny walker walk
+print(f"{b} | " * t, end="\n\n")
+
+## Print vertically
+print('Printing vertically using for loop...')
+# range(4) -> 0, 1, 2, 3
+# range(1, 4) -> 1, 2, 3
+for i in range(t):
+    print("{0} {1} time".format(b, i+1))
+print("")
+
+### Slicing & Index
+print("===== SLICING and INDEXING ====")
+# print string in reverse
+print("Print string in reverse....")
+print(a[::-1], end="\n\n")
+
+print("Skip 1 character....")
+print(a[::2], end="\n\n")
+
+print("Print first name....")
+print(a[:6], end="\n\n")
+
+print("Print last name....")
+print(a[7:], end="\n\n")
+
+
+
+print("Convert to upper / lower....")
+print(a.upper(), end="\n\n")
+print(a.lower(), end="\n\n")
+
+
+
+print("Split string into a list....")
+b  = a.split(" ")
+print(b, end="\n\n")
+
+
+print("Join the strings from list back....")
+l = ",".join(b)
+print(l, end="\n\n")
+
+
+print("Replace last name....")
+print(a.replace('walker', 'cage'), end="\n\n")
